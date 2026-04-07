@@ -49,11 +49,11 @@ OPENAI ANSWER:
 
 Best selector priority (scraping এ):
 
-1️⃣ id → সবচেয়ে stable
-2️⃣ name / data-attribute
-3️⃣ class name (specific)
-4️⃣ CSS selector
-5️⃣ XPath (last option)
+- 1️⃣ id → সবচেয়ে stable
+- 2️⃣ name / data-attribute
+- 3️⃣ class name (specific)
+- 4️⃣ CSS selector
+- 5️⃣ XPath (last option)
 
 ## 1️⃣ Login page এর জন্য তুমি যেভাবে দাও
 
