@@ -10,7 +10,7 @@ with sync_playwright() as p:
 
     # ৩. সার্চ করা
     search_input = page.locator("input[name='search']")
-    search_input.fill("Python (programming language)")
+    search_input.fill("Python (programming language) for AI")
     search_input.press("Enter")
 
     # ৪. রেজাল্ট লোড হওয়া পর্যন্ত অপেক্ষা (প্রথম হেডিং এর জন্য)
@@ -25,3 +25,4 @@ with sync_playwright() as p:
 
     # ৭. বন্ধ করা
     browser.close()
+    
