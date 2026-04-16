@@ -3,9 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import os 
+import dotenv
 
-EMAIL = ""
-PASSWORD = ""
+dotenv.load_dotenv()
+
+EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -45,6 +49,7 @@ for job in job_elements:
     if link:   # None হলে skip
         job_links.append(link)
 
+print(f"Job links: {job_links}")
 
 
 print("Total jobs found:", len(job_links))
